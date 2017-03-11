@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;;;AACA,6BAAwB","sourcesContent":["export * from './db';\r\nexport * from './class';\r\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;;;AAAA,gDAA8C;AAE9C,6BAAwB","sourcesContent":["import 'jspolyfill-array.prototype.findIndex';\r\nexport * from './db';\r\nexport * from './class';\r\n"]}
