@@ -1,5 +1,3 @@
-import { Response } from 'express';
-
 export interface Multi<T> {
   total: number;
   rows: T[];
