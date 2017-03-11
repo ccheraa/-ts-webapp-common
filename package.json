@@ -24,7 +24,5 @@
     "url": "https://github.com/ccheraa/ts-webapp-common/issues"
   },
   "homepage": "https://github.com/ccheraa/ts-webapp-common#readme",
-  "devDependencies": {
-    "jspolyfill-array.prototype.findIndex": "git+https://github.com/jsPolyfill/Array.prototype.findIndex.git"
-  }
+  "devDependencies": {}
 }
