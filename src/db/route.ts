@@ -1,10 +1,10 @@
-let  rootUrl = '/api/db';
+let  dbUrl = '/api/db';
 let  apiUrl = '/api';
-export function RootUrl(url?: string): string {
+export function DBUrl(url?: string): string {
   if (url) {
-    rootUrl = url;
+    dbUrl = url;
   }
-  return rootUrl;
+  return dbUrl;
 }
 export function ApiUrl(url?: string): string {
   if (url) {
