@@ -1,13 +1,13 @@
 "use strict";
-var rootUrl = '/api/db';
+var dbUrl = '/api/db';
 var apiUrl = '/api';
-function RootUrl(url) {
+function DBUrl(url) {
     if (url) {
-        rootUrl = url;
+        dbUrl = url;
     }
-    return rootUrl;
+    return dbUrl;
 }
-exports.RootUrl = RootUrl;
+exports.DBUrl = DBUrl;
 function ApiUrl(url) {
     if (url) {
         apiUrl = url;
