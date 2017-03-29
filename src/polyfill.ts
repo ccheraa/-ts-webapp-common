@@ -19,3 +19,25 @@ Array.prototype.findIndex = Array.prototype.findIndex || function(callback) {
   }
   return -1;
 };
+
+interface Object {
+  assign: (...sources: any[]) => any;
+}
+Object.prototype.assign = function(...sources): any {
+  for (var
+    hOP = Object.prototype.hasOwnProperty,
+    copy = function (key) {
+      if (!hOP.call(this, key)) {
+        Object.defineProperty(
+          this,
+          key,
+          Object.getOwnPropertyDescriptor(this, key)
+        );
+      }
+    },
+    i = sources.length;
+    i-- > 0;
+    Object.keys(sources[i]).forEach(copy, sources[i])
+  ){}
+  return this;
+}

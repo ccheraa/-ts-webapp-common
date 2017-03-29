@@ -16,4 +16,16 @@ Array.prototype.findIndex = Array.prototype.findIndex || function (callback) {
     }
     return -1;
 };
+Object.prototype.assign = function () {
+    var sources = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        sources[_i] = arguments[_i];
+    }
+    for (var hOP = Object.prototype.hasOwnProperty, copy = function (key) {
+        if (!hOP.call(this, key)) {
+            Object.defineProperty(this, key, Object.getOwnPropertyDescriptor(this, key));
+        }
+    }, i = sources.length; i-- > 0; Object.keys(sources[i]).forEach(copy, sources[i])) { }
+    return this;
+};
 //# sourceMappingURL=polyfill.js.map
