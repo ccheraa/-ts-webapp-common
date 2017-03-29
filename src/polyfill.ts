@@ -2,7 +2,7 @@ type findIndexCallback<T> = (value: T, index: number, obj: Array<T>) => boolean;
 interface Array<T> {
   findIndex: (callback: findIndexCallback<T>, thisArg?: any) => number;
 }
-Array.prototype.findIndex = Array.prototype.findIndex || function(callback) {
+(<any>Array.prototype).findIndex = (<any>Array.prototype).findIndex || function(callback) {
   if (this === null) {
     throw new TypeError('Array.prototype.findIndex called on null or undefined');
   } else if (typeof callback !== 'function') {
@@ -23,7 +23,7 @@ Array.prototype.findIndex = Array.prototype.findIndex || function(callback) {
 interface Object {
   assign: (...sources: any[]) => any;
 }
-Object.prototype.assign = function(...sources): any {
+(<any>Object.prototype).assign = function(...sources): any {
   for (var
     hOP = Object.prototype.hasOwnProperty,
     copy = function (key) {
@@ -41,3 +41,4 @@ Object.prototype.assign = function(...sources): any {
   ){}
   return this;
 }
+export const name = 'polyfill';

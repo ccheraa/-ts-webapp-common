@@ -1,7 +1,1 @@
-declare type findIndexCallback<T> = (value: T, index: number, obj: Array<T>) => boolean;
-interface Array<T> {
-    findIndex: (callback: findIndexCallback<T>, thisArg?: any) => number;
-}
-interface Object {
-    assign: (...sources: any[]) => any;
-}
+export declare const name = "polyfill";

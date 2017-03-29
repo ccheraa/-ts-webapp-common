@@ -1,3 +1,4 @@
+"use strict";
 Array.prototype.findIndex = Array.prototype.findIndex || function (callback) {
     if (this === null) {
         throw new TypeError('Array.prototype.findIndex called on null or undefined');
@@ -28,4 +29,5 @@ Object.prototype.assign = function () {
     }, i = sources.length; i-- > 0; Object.keys(sources[i]).forEach(copy, sources[i])) { }
     return this;
 };
+exports.name = 'polyfill';
 //# sourceMappingURL=polyfill.js.map
