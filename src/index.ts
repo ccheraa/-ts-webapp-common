@@ -1,4 +1,3 @@
-import { name } from './polyfill';
-let dummy = name;
+import './polyfill';
 export * from './db';
 export * from './class';

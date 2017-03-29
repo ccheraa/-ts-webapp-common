@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;;;AAAA,uCAAkC;AAClC,IAAI,KAAK,GAAG,eAAI,CAAC;AACjB,0BAAqB;AACrB,6BAAwB","sourcesContent":["import { name } from './polyfill';\r\nlet dummy = name;\r\nexport * from './db';\r\nexport * from './class';\r\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":";;;;AAAA,sBAAoB;AACpB,0BAAqB;AACrB,6BAAwB","sourcesContent":["import './polyfill';\r\nexport * from './db';\r\nexport * from './class';\r\n"]}
