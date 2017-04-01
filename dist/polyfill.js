@@ -17,7 +17,7 @@ Array.prototype.findIndex = Array.prototype.findIndex || function (callback) {
     }
     return -1;
 };
-Object.prototype.assign = function () {
+function objectAssign() {
     var sources = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         sources[_i] = arguments[_i];
@@ -28,6 +28,7 @@ Object.prototype.assign = function () {
         }
     }, i = sources.length; i-- > 0; Object.keys(sources[i]).forEach(copy, sources[i])) { }
     return this;
-};
+}
+exports.objectAssign = objectAssign;
 exports.name = 'polyfill';
 //# sourceMappingURL=polyfill.js.map

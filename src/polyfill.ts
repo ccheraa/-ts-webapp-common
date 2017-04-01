@@ -20,10 +20,7 @@ interface Array<T> {
   return -1;
 };
 
-interface Object {
-  assign: (...sources: any[]) => any;
-}
-(<any>Object.prototype).assign = function(...sources): any {
+export function objectAssign(...sources): any {
   for (var
     hOP = Object.prototype.hasOwnProperty,
     copy = function (key) {
